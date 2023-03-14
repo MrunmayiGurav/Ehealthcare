@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="homepage.master.cs" Inherits="E_Health.homepage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;<a href="homepage.Master">homepage.Master</a>
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+        .footer {
+            position:fixed;
+            bottom:0;
+            width:100%;
+            height:100px;
+            padding-top:5px;
+            background:#00997A;
+        }
+        .footer p{
+            margin-bottom:25px;
+            margin-top:20px;
+            text-align:center;
+            font-weight:400;
+
+        }
+      
+</style>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <ul>
+        <li><a class="active" href="home.aspx">Home</a></li>
+         <li><a href="About.aspx">About</a></li>
+        <li><a href="Contact.aspx">Contact</a></li>
+        <li><a href="Dr_login.aspx">Dr Login</a></li>
+            <li><a href="Login.aspx">Patient Login</a></li>
+        </ul>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         <link href="css/bootstrap.min.css" rel="stylesheet" />
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <!---------Footer--------->
+	<section class="footer">
+		<p>Keeping your body healthy is an expression of gratitude to the whole cosmos-the trees,the douds,everything.</p>
+	</section>
+</body>
+</html>

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{661674C0-1E15-430D-900A-3C89FDEE0C20}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>E_Health</RootNamespace>
+    <AssemblyName>E_Health</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="Dr_login.aspx" />
+    <Content Include="Dr_profile.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="image\about.jpg" />
+    <Content Include="image\Avtar.png" />
+    <Content Include="image\contact.jpg" />
+    <Content Include="image\Dr1.jpg" />
+    <Content Include="image\dr2.jpg" />
+    <Content Include="image\dr3.jpg" />
+    <Content Include="image\dr4.jpg" />
+    <Content Include="image\eating.jpg" />
+    <Content Include="image\foodpyramid.gif" />
+    <Content Include="image\hosbg.jpg" />
+    <Content Include="image\new.jpg" />
+    <Content Include="image\routine3rd.png" />
+    <Content Include="image\routine4.png" />
+    <Content Include="image\routine6.jpg" />
+    <Content Include="image\warmup.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="p_Registrer.aspx" />
+    <Content Include="routine.aspx" />
+    <Content Include="viewmembers.aspx" />
+    <Content Include="view_dr.aspx" />
+    <Content Include="view_drappointment.aspx" />
+    <Content Include="view_drpric.aspx" />
+    <Content Include="view_paipriscrip.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Dr_registration.aspx" />
+    <Content Include="priscrip.aspx" />
+    <Content Include="Getappo.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dr_login.aspx.cs">
+      <DependentUpon>Dr_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dr_login.aspx.designer.cs">
+      <DependentUpon>Dr_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dr_profile.aspx.cs">
+      <DependentUpon>Dr_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dr_profile.aspx.designer.cs">
+      <DependentUpon>Dr_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dr_side.Master.cs">
+      <DependentUpon>Dr_side.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dr_side.Master.designer.cs">
+      <DependentUpon>Dr_side.Master</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.Master.cs">
+      <DependentUpon>homepage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.Master.designer.cs">
+      <DependentUpon>homepage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="p_Registrer.aspx.cs">
+      <DependentUpon>p_Registrer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="p_Registrer.aspx.designer.cs">
+      <DependentUpon>p_Registrer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="routine.aspx.cs">
+      <DependentUpon>routine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="routine.aspx.designer.cs">
+      <DependentUpon>routine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="viewmembers.aspx.cs">
+      <DependentUpon>viewmembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewmembers.aspx.designer.cs">
+      <DependentUpon>viewmembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dr_registration.aspx.cs">
+      <DependentUpon>Dr_registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dr_registration.aspx.designer.cs">
+      <DependentUpon>Dr_registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="priscrip.aspx.cs">
+      <DependentUpon>priscrip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="priscrip.aspx.designer.cs">
+      <DependentUpon>priscrip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Getappo.aspx.cs">
+      <DependentUpon>Getappo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Getappo.aspx.designer.cs">
+      <DependentUpon>Getappo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_dr.aspx.cs">
+      <DependentUpon>view_dr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view_dr.aspx.designer.cs">
+      <DependentUpon>view_dr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_drappointment.aspx.cs">
+      <DependentUpon>view_drappointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view_drappointment.aspx.designer.cs">
+      <DependentUpon>view_drappointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_drpric.aspx.cs">
+      <DependentUpon>view_drpric.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view_drpric.aspx.designer.cs">
+      <DependentUpon>view_drpric.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_paipriscrip.aspx.cs">
+      <DependentUpon>view_paipriscrip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view_paipriscrip.aspx.designer.cs">
+      <DependentUpon>view_paipriscrip.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="homepage.Master" />
+    <Content Include="Dr_side.Master" />
+    <Content Include="user.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63638/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
